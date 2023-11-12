@@ -1,0 +1,81 @@
+:root{
+    --primaryOrange: hsl(31, 77%, 52%);
+    --primaryDarkCyan: hsl(184, 100%, 22%);
+    --primaryVeryDarkCyan: hsl(179, 100%, 13%);
+    --neutralTransparentWhite:hsla(0, 0%, 100%, 0.75);
+    --neutralVeryLightGray:hsl(0, 0%, 95%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--neutralVeryLightGray);
+    font-family: 'Lexend Deca', sans-serif;
+    height: 100vh;
+}
+.card-title{
+    font-family: 'Big Shoulders Display', sans-serif;
+}
+.container .card-group .card:nth-child(1){
+    background-color: var(--primaryOrange);
+}
+.container .card-group .card:nth-child(2){
+    background-color: var(--primaryDarkCyan);
+}
+.container .card-group .card:nth-child(3){
+    background-color: var(--primaryVeryDarkCyan);
+}
+.card{
+    max-width:280px;
+}
+.card-title{
+    color: var(--neutralVeryLightGray);
+}
+.card-text{
+    color: var(--neutralTransparentWhite);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 25px;
+    padding-right: 0.6rem;
+}
+/* Buttons */
+.btn{
+    background-color: var(--neutralVeryLightGray);
+    font-size: 15px!important;
+    font-family: inherit!important;
+    font-size: 13px;
+    border: 2px solid var(--neutralVeryLightGray);
+}
+.card:nth-child(1) .btn{
+    color: var(--primaryOrange);
+}
+.card:nth-child(2) .btn{
+    color: var(--primaryDarkCyan);
+}
+.card:nth-child(3) .btn{
+    color: var(--primaryVeryDarkCyan);}
+.btn:hover{
+    background-color: inherit;
+    color: var(--neutralVeryLightGray)!important;
+    border: 2px solid var(--neutralVeryLightGray);
+}
+/* Media Queries */
+@media(min-width:576px){
+    .card:first-child{
+        border-radius: 10px 0 0 10px !important;
+        -webkit-border-radius: 10px 0 0 10px !important;
+        -moz-border-radius: 10px 0 0 10px !important;
+        -ms-border-radius: 10px 0 0 10px !important;
+        -o-border-radius: 10px 0 0 10px !important;
+    }
+    .card:last-child{
+        border-radius: 0 10px 10px 0 !important;
+    }
+}
+@media(max-width:576px){
+    .container{
+        height: 100%;
+    }
+}
