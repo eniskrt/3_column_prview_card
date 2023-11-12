@@ -28,7 +28,7 @@ body{
     background-color: var(--primaryVeryDarkCyan);
 }
 .card{
-    max-width:290px;
+    max-width:300px;
 }
 .card-title{
     color: var(--neutralVeryLightGray);
@@ -37,9 +37,10 @@ body{
 .card-text{
     color: var(--neutralTransparentWhite);
     font-weight: 300;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 25px;
-    padding-right: 1.3rem;
+    padding-right: 0.7rem;
+    font-weight: 400;
 }
 /* Buttons */
 .btn{
@@ -48,6 +49,11 @@ body{
     font-family: inherit!important;
     font-size: 13px;
     border: 2px solid var(--neutralVeryLightGray);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
 }
 .card:nth-child(1) .btn{
     color: var(--primaryOrange);
