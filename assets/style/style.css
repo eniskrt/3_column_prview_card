@@ -28,17 +28,18 @@ body{
     background-color: var(--primaryVeryDarkCyan);
 }
 .card{
-    max-width:280px;
+    max-width:290px;
 }
 .card-title{
     color: var(--neutralVeryLightGray);
+    font-weight: 700;
 }
 .card-text{
     color: var(--neutralTransparentWhite);
     font-weight: 300;
     font-size: 14px;
     line-height: 25px;
-    padding-right: 0.6rem;
+    padding-right: 1.3rem;
 }
 /* Buttons */
 .btn{
